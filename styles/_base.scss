@@ -1,0 +1,256 @@
+// add base styles here
+
+.bg {
+    background-image: url("../../images/lightpaperfibers.png");	
+}
+
+.braille {
+	font-family: 'Braille';
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-wrap: break-word;
+}
+
+.header {
+	background-color: #292b2c;
+	padding: 1rem;
+}
+
+.header,
+.header a {
+	color: #fff;
+}
+
+.header a:hover {
+	color: #636c72;
+}
+
+.header-logo {
+	font-size: 2.5rem;
+}
+
+.header-chapter {
+	padding: 1rem 0;
+}
+
+.nav-primary-items,
+.nav-social-items,
+.nav-chapter-items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.header-logo,
+.nav-primary-items,
+.nav-chapter-items,
+.chapter-title {
+	margin-bottom: 1rem;
+}
+
+.nav-primary-item,
+.nav-social-item {
+	margin: 0 .8rem;
+}
+
+.nav-social-item {
+	font-size: 1.5rem;
+}
+
+.nav-chapter-item {
+	font-size: 2rem;
+}
+
+.main {
+	overflow: auto;
+	padding: 2rem;
+}
+
+.section {
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+}
+
+.container {
+	width: 100%;
+}
+
+.container-narrow {
+	margin: 0 auto;
+	max-width: 40rem;
+}
+
+.section h1,
+.section h2 {
+	font-weight: 300;
+	line-height: 1.1;
+}
+
+.section h1 {
+	font-size: 3rem;
+}
+
+.section h2 {
+	font-size: 2.5rem;
+}
+
+.announce {
+	font-size: 1.5rem;
+	padding: 0.5rem 1rem;
+	border-left: solid 0.25rem #292b2c;
+	border-right: solid 0.25rem #292b2c;
+}
+
+.link {
+	border-bottom: 1px solid #292b2c;
+}
+
+article p {
+	text-indent: 2rem;
+	margin: 1em 0;
+}
+
+article p:last-of-type {
+	margin-bottom: 3rem;
+}
+
+.lieu {
+	text-indent: 0;
+	font-size: 1rem;
+}
+
+.bigindent {
+	text-indent: 30rem;
+}
+
+.text-center p {
+	text-indent: 0;
+}
+
+.btn-outline-secondary {
+	color: #292b2c;
+	border-color: #636c72;
+}
+
+.btn-outline-secondary:hover {
+	background-color: #292b2c;
+}
+
+.btn-lg {
+	border-radius: 0;
+}
+
+.toc-item {
+	width: 48%;
+	text-align: center;
+	border: 1px solid #636c72;
+	margin-bottom: 4%;
+}
+
+.toc-item a {
+	display: block;
+	color: #292b2c;
+	padding: 1rem;
+}
+
+.toc-item a:hover {
+	background-color: #292b2c;
+	color: #fff;
+	text-decoration: none;
+}
+
+.toc-item h2 {
+	font-weight: normal;
+	font-size: 3.5rem;
+}
+
+.toc-item h4 {
+	font-family: Helvetica, sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+.toc-item h2,
+.toc-item h4 {
+	margin-bottom: 0;
+}
+
+@media only screen and (min-width: 544px) {
+	.toc-item {
+		width: 32%;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	.wrapper {
+		overflow: hidden;
+    height: 100vh;
+	}
+
+	.header {
+		padding: 2rem 1rem;
+		flex: 0 0 20rem;
+		max-width: 20rem;
+	}
+
+	.header-logo {
+		font-size: 3.5rem;
+	}
+
+	.header-logo,
+	.nav-primary-items {
+		margin-bottom: 2rem;
+	}
+
+	.nav-primary-item {
+		margin: 0.5rem 0;
+	}
+
+	.main {
+		padding: 2rem;
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: 0%;
+	}
+
+	.section h1 {
+		font-size: 3.5rem;
+	}
+
+	.section h2 {
+		font-size: 3rem;
+	}
+
+	.announce {
+		font-size: 2rem;
+	}
+
+	.header-chapter {
+		margin-top: 2rem;
+	}
+
+	.nav-chapter-item {
+		margin-right: .5rem;
+	}
+
+	.nav-chapter-item:last-of-type {
+		margin-right: 0;
+	}
+
+	.toc-item {
+		width: 48%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.toc-item {
+		width: 32%;
+		margin-bottom: 2%;
+	}
+}
