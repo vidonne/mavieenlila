@@ -3600,7 +3600,8 @@ article p:last-of-type {
   border-color: #636c72; }
 
 .btn-outline-secondary:hover {
-  background-color: #292b2c; }
+  background-color: #292b2c;
+  border-color: #292b2c; }
 
 .btn-lg {
   border-radius: 0; }
