@@ -24,6 +24,27 @@
     </script>
   </head>
   <body class="bg">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLabel">Déjà plus de 1000 lecteurs!</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><a href="http://mavieenlila.bigcartel.com/product/livre-broche-1" alt="Livre broché" class="link" target="_blank">Livre papier</a> ou <a href="http://mavieenlila.bigcartel.com/product/ebook" alt="Livre numérique" class="link" target="_blank">livre numérique</a>, trouvez le format qu'il vous faut !</p>
+          </div>
+          <div class="modal-footer">
+            <a href="http://mavieenlila.bigcartel.com/" alt="Acheter le livre" target="_blank">
+              <button type="button" class="btn btn-outline-secondary btn-lg">Acquérir</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="d-flex flex-column flex-md-row wrapper">
       <header class="header">
         <div class="d-flex justify-content-center header-logo">
@@ -157,5 +178,10 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/tether/dist/js/tether.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#myModal").modal('show');
+        });
+    </script>
   </body>
 </html>
