@@ -6,4 +6,4 @@ pages:
     paths:
       - public
   only:
-    - main  # Replace 'main' with your default branch name if different
+    - master  # Replace 'main' with your default branch name if different
