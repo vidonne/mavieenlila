@@ -1,9 +1,10 @@
 pages:
   script:
     - mkdir public
-    - cp -r * public
+    - shopt -s extglob  # Enable extended globbing
+    - cp -r !(public) public  # Copy everything except the 'public' directory
   artifacts:
     paths:
       - public
   only:
-    - master  # Replace 'main' with your default branch name if different
+    - master  # Replace 'master' with your default branch name if different
